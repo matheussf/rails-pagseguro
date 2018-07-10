@@ -1,0 +1,14 @@
+<h1>Escolha seu Plano</h1>
+
+<%= form_tag(subscription_address_path, method: "get") do %>
+  <%= radio_button_tag(:plan, "basic") %>
+  <%= label_tag(:plan_basic, "R$ 1,00 - Plano Básico") %>
+  <br>
+  <%= radio_button_tag(:plan, "medium") %>
+  <%= label_tag(:plan_medium, "R$ 2,00 - Plano Médio") %>
+  <br>
+  <%= radio_button_tag(:plan, "advanced") %>
+  <%= label_tag(:plan_premium, "R$ 3,00 - Plano Avançado") %>
+  <br>
+  <%= submit_tag("Próximo") %>
+<% end %>

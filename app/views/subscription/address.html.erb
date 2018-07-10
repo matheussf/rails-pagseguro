@@ -1,0 +1,19 @@
+<h1>Endereço</h1>
+
+<%= form_tag(subscription_payment_path, method: "get") do %>
+  <%= label_tag(:address_street, "Rua:") %>
+  <%= text_field_tag(:address_street) %>
+  <%= label_tag(:address_number, "N:") %>
+  <%= text_field_tag(:address_number) %>
+  <br>
+  <%= label_tag(:address_neighborhood, "Bairro:") %>
+  <%= text_field_tag(:address_neighborhood) %>
+  <br>
+  <%= label_tag(:address_city, "Cidade:") %>
+  <%= text_field_tag(:address_city) %>
+  <br>
+  <%= label_tag(:address_state, "Estado:") %>
+  <%= text_field_tag(:address_state) %>
+  <br>
+  <%= submit_tag("Próximo") %>
+<% end %>

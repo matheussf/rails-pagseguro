@@ -1,0 +1,14 @@
+<h1>Método de Pagamento</h1>
+
+<%= form_tag(subscription_done_path, method: "get") do %>
+  <%= label_tag(:card_number, "N Cartão:") %>
+  <%= text_field_tag(:card_number) %>
+  <br>
+  <%= label_tag(:card_secret, "Código de Segurança:") %>
+  <%= text_field_tag(:card_secret) %>
+  <br>
+  <%= label_tag(:card_expiration_date, "Data Validade:") %>
+  <%= text_field_tag(:card_expiration_date) %>
+  <br>
+  <%= submit_tag("Próximo") %>
+<% end %>
